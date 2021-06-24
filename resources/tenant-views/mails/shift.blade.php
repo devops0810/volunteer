@@ -1,0 +1,1 @@
+@lang('admin.shift-mail-message',['name'=>$user->name,'event'=>$shift->event->name,'start'=> \Illuminate\Support\Carbon::parse($shift->starts)->format('h:i A') ,'end'=> \Illuminate\Support\Carbon::parse($shift->ends)->format('h:i A'),'task'=>$user->pivot->tasks,'date'=>\Illuminate\Support\Carbon::parse($shift->event->event_date)->diffForHumans() ])

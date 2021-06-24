@@ -1,0 +1,5 @@
+@extends('subscriber.forms.addressform')
+@section('pageTitle',__('saas.edit-address'))
+@section('page-title',__('saas.edit-address'))
+@section('route',route('user.billing-address.update',['billingAddress'=>$id]))
+@section('method',method_field('PUT'))
